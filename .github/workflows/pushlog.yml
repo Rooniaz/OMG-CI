@@ -33,7 +33,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
        
-   - name: Create New Branch with Commit Hash
+   - name: Create New Branch with Commit
      env:
        GH_PAT: ${{ secrets.GH_PAT }}
      run: |
