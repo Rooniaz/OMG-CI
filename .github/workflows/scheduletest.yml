@@ -26,7 +26,7 @@ jobs:
         images: krisneonploy/schedule 
         
     
-- name: Build and push Docker image
+    - name: Build and push Docker image
       uses: docker/build-push-action@v4
       with:
         context: .
